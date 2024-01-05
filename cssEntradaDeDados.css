@@ -1,0 +1,26 @@
+.Credenciais {
+    background-color: aqua;
+}
+
+.titulo {
+    background-color: red;
+    text-align: center;
+    font-size: large;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: cadetblue;
+}
