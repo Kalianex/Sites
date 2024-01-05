@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sala</title>
+
+</head>
+
+<body>
+
+    <div class="titulo">
+        Cadastro
+    </div>
+
+    <div class="Credenciais">
+        <form action="" method="get">
+            <label for="nome"> Nome: </label>
+            <input type="text" name="username" id="nome"></input>
+
+            <label for="nota"> Nota: </label>
+            <input type="number" name="Nota" id="nota"></input>
+
+            <button type='button' onclick="cadastrar()">+</button>
+        </form>
+    </div>
+
+    <table id="tabela">
+        <thead>
+            <th>Aluno</th>
+            <th>Nota</th>
+        </thead>
+        <tbody class="table">
+        </tbody>
+    </table>
+
+    <script>
+        function cadastrar() {
+            var nome = document.getElementById('nome').value;
+            var nota = document.getElementById('nota').value;
+            var tabela = document.getElementById('tabela');
+            var qtLinha = tabela.insertRow(tabela.rows.length);
+            var linha1 = qtLinha.insertCell(0);
+            var linha2 = qtLinha.insertCell(1);
+            linha1.innerHTML = nome;
+            linha2.innerHTML = nota;
+        }
+    </script>
+</body>
+
+</html>
