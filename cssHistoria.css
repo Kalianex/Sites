@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://img.freepik.com/fotos-premium/fundo-de-papel-vintage-gasto-textura-de-manuscrito-antigo_84485-1633.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto::first-letter {
+    font-family: "Brush Script MT";
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    margin: 10px 20px;
+}
+
+.cima,
+.baixo {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+    shape-outside: square;
+    clip-path: square;
+    
+}
+
+.baixo {
+    background-color: rgb(188, 0, 245);
+    z-index: 1;
+    position: absolute;
+    top: 397px;
+    left: 20px;
+
+}
+
+.cima {
+    background-color: rgb(0, 255, 255);
+    z-index: 2;
+    position: relative;
+    top: 5px;
+    left: 12px;
+}
+
+.cima:hover {
+    opacity: 0;
+}
